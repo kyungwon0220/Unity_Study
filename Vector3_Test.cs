@@ -28,6 +28,7 @@ public class Vector_Test : MonoBehaviour
         {
             Debug.Log("Right Arrow key Pressed");
             _tr.position += new Vector3(speed * Time.deltaTime, 0, 0); // Vector3.forward 는 게임內(월드 Z축 방향을 바라본다.
+            // 힙(Heap)에 들어가는 레퍼런스 타입이 아니다, 구문상 'new' 키워드를 반드시 기재하여야 한다.
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))

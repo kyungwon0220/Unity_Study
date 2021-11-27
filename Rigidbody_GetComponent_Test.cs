@@ -27,5 +27,6 @@ public class Rigidbody_GetComponent_Test : MonoBehaviour
     private void DoJump()
     {
         myRigidbody.AddForce(0f, speed, 0f, ForceMode.Impulse);
+        // 캐릭터 점프에서 주로 Impulse 옵션을 사용하며 가장 많이 사용한다고 한다.
     }
 }
